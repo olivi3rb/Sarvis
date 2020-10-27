@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=raleway&display=swap');
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Raleway', Georgia, 'Times New Roman', Times,sans-serif;
+}
+
+.mobile{
+    display: block;
+}
+
+.desktop{
+    display: none;
+}
+
+.tablet{
+    display: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.asterics{
+  color: red;
+}
+
+/* Style for the header specifies top margin, background color, rounded corners, and center-aligns content to edit the comment */
+
+.header-container{
+    text-align: center;
+}
+
+header .mobile{
+  border-bottom: 5px solid #EFC59D;
+  margin-bottom: 2em;
+}
+
+  /* Showcase styles  */
+  .showcase{
+    background-color: #D9BD85;
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
+  .showcase h5{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+  }
+
+  .showcase button{
+    padding: 0.8em 1em;
+    background-color: white;
+    border: none;
+  }
+
+  /* How styles */
+  #how{
+    padding: 50px 0;
+  }
+
+  #how h2{
+    margin-top: 1em;
+  }
+
+  #how h5{
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  #how h4{
+    color: #D9BD85;
+  }
+
+  #how img{
+    margin-bottom: 0.6em;
+  }
+
+  #how a{
+    color: #EFC59D;
+  }
+
+  /* Prestations styles  */
+
+  
+  #prestations{
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.prestations-title{
+ margin-bottom: 2em;
+}
+
+.title::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+ 
+    width: 50px; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid #EFC59D; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.prestations-img{
+    width: 225px;
+    padding-bottom: 2em;
+
+}
+
+.prestations{
+    background-color: white;
+}
+
+.prestations a{
+    text-decoration: none;
+    color: black;
+}
+
+.prestations h4{
+    font-size: 13px;
+}
+
+
+.col-md{
+    
+    padding: 2em;
+    margin: 1em;
+}
+
+
+/* Why Styles  */
+
+.why{
+  padding: 3em 0em;
+}
+
+.why button{
+    padding: 0.8em 1em;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+/* Footer */
+
+footer .socials{
+  text-align: center;
+}
+
+footer .socials a{
+  color: black;
+  /* margin-right: 1em; */
+}
+
+footer{
+  color: white;
+  background-color: black;
+}
+
+footer a{
+  color: #D9BD85;
+}
+
+ /* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+ @media only screen and (min-width: 660px){
+  .mobile{
+      display: none;
+  }
+
+  .tablet{
+      display: block;
+  }
+
+  .desktop{
+    display: block;
+  }
+
+
+  .container{
+      width: 80%;
+      margin: auto;
+  
+  }
+
+  footer a:hover{
+    color: #D9BD85;
+  }
+
+  /* NAVIGATION STYLES  */
+ .desktop header{
+  border-bottom: 5px solid #EFC59D;
+ /* padding-bottom: 2em; */
+
+}
+  .navigation{
+    padding: 1.5em;
+  }
+
+.btn-link{
+  color: black !important;
+}
+
+.navigation i{
+  color: black;
+  
+}
+
+.navigation img{
+  margin-right: 1em;
+}
+
+
+.navigation button:hover{
+  background-color: #D9BD85;
+}
+
+.signin-btn {
+ color: #F0C39A !important;
+}
+
+.signin-btn:hover{
+  background-color: white !important;
+}
+
+.btn-dark{
+  background-color: #F0C39A !important;
+  border-color: #F0C39A!important;
+}
+
+/* Banner */
+
+.container-banner{
+  opacity: 90%;
+  background-color: white;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.19);
+padding: 0.1em 2em;
+}
+
+.contact-banner{
+  padding-top: 0.5em;
+
+  
+}
+
+.info h1 {
+  color: black;
+  font-size: 14px;
+  list-style: none;
+  display: inline-block;
+  /* font-weight: bold; */
+  margin-right: 8%;  
+}
+
+.socials a{
+  margin-right: 2%;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 5px;
+  width: 32px;
+  text-align: center;
+  text-decoration: none; 
+}
+
+.fa-social{
+  /* border-radius: 50%;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.19); */
+  color: black;
+  /* margin-top: 0.5em; */
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: black;
+  text-decoration: none;
+}
+
+/* SHOWCASE */
+
+.site-banner {
+  min-height: 400px;
+  height: 600px;
+  background: url(../img/workingwomen1.jpeg)  ;
+  background-size:      cover;                      
+  background-repeat:   no-repeat;
+  background-position: center ;
+  
+}
+
+
+.showcase-message h1,h5{
+  margin-top: 4em;
+}
+
+.showcase-message h5{
+  color: white;
+
+}
+
+.btn-showcase{
+  background-color: white;
+  color: black;
+  width: 11em;
+}
+
+/* PRESTATIONS  */
+
+#prestations{
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+.prestations-title{
+margin-bottom: 2em;
+}
+
+.title::after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+
+  width: 50px; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #EFC59D; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.prestations-img{
+  width: 225px;
+  padding-bottom: 2em;
+
+}
+
+.prestations{
+  background-color: white;
+}
+
+.prestations a{
+  text-decoration: none;
+  color: black;
+}
+
+.prestations a:hover{
+  text-decoration: none;
+  color: chocolate;
+}
+
+.prestations h4{
+  font-size: 13px;
+}
+
+
+.col-md{
+  
+  padding: 2em;
+  margin: 1em;
+}
+
+
+ /* Qualities styles   */
+  .qualities{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    /* background-color: #F0C39A; */
+}
+
+.qualities h1{
+    margin-bottom: 1em;
+}
+
+
+
+.engagement{
+    /* width: 100px; */
+    padding: 0.5em;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    margin: 0em 1em;
+
+
+}
+
+.align-self-1{
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+}
+
+.align-self-2{
+    /* margin-left: 8em; */
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.align-self-3{
+    /* margin-left: 16em; */
+    background: #004FF9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFF94C, #004FF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+}
+
+.align-self-4{
+    /* margin-left: 6em; */
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+/* WHY  */
+.why{
+  background: #f8f9fa;
+}
+
+footer .socials{
+  text-align: right;
+}
+
+/**************** FORMULAIRE SERVICE PAGE  ********************/
+#main-Formservice{
+  background-color: #f8f9fa;
+  padding-top: 4em;
+}
+
+
+
+.box {
+  width: 200px;
+  height: 175px;
+  background-color: #3F3F3F;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  /* margin: 40px; */
+  /* float: left; */
+}
+
+.box .fa {
+  font-size: 30px;
+}
+
+.box-2{
+  background-color: #EFC59D;
+}
+
+.box{
+text-align: center;
+font-size: 14px;
+}
+
+.box.arrow-right:before {
+  content: " ";
+  position: absolute;
+  right: 185px;
+  top: 0px;
+  border-top: 85px solid transparent;
+  border-right: none;
+  border-left: 15px solid #EFC59D;
+  border-bottom: 90px solid transparent;
+  
+}
+
+.box-2.arrow-right:before {
+  content: " ";
+  position: absolute;
+  right: 185px;
+  top: 0px;
+  border-top: 85px solid transparent;
+  border-right: none;
+  border-left: 15px solid #3F3F3F;
+  border-bottom: 90px solid transparent;
+}
+
+.boxes{
+  margin: 2em 0em;
+}
+
+form{
+  margin-bottom: 4em;
+}
+
+/* PAGE ELECTRICITE  */
+.title-service{
+  font-weight: bold;
+}
+
+
+
+
+
+
+}
